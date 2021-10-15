@@ -4,7 +4,7 @@ const less = require('gulp-less');
 
 gulp.task('less', (cb) => {
   gulp
-    .src('src/*.less')
+    .src('src/css/*.less')
     .pipe(less())
     .pipe(
       gulp.dest((f) => f.base),
@@ -15,7 +15,7 @@ gulp.task('less', (cb) => {
 gulp.task(
   'default',
   gulp.series('less', (cb) => {
-    gulp.watch('src/*.less', gulp.series('less'));
+    gulp.watch('src/css/*.less', gulp.series('less'));
     cb();
   }),
 );
