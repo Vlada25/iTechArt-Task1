@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'Muller ExtraBold DEMO';
+	src: url('../fonts/muller_extrabold_demo.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/muller_extrabold_demo.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/muller_extrabold_demo.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/muller_extrabold_demo.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/muller_extrabold_demo.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/muller_extrabold_demo.svg#muller_extrabold_demo') format('svg'); /* Chrome < 4, Legacy iOS */
+}
