@@ -52,6 +52,13 @@ button {
   color: white;
   border: none;
   border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+button:hover {
+  background-color: #ffae22;
+  border-radius: 10px;
+  transition: all 0.3s;
 }
 input {
   border: none;
