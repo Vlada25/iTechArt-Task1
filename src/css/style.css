@@ -122,14 +122,36 @@ input {
 #services {
   width: 100%;
   box-sizing: border-box;
-  padding: 177px 15.2% 0 15.2%;
+  padding: 177px 15.2% 135px 15.2%;
 }
 .service__container {
-  background-color: blue;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 15px;
 }
 .service__container_item {
-  flex-basis: 50%;
+  flex-basis: 47.5%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 65px;
+}
+.service__container_item p {
+  margin-top: -1px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+.service__img {
+  width: 15%;
+}
+.service__img img {
+  height: 42px;
+}
+.service__item-text {
+  width: 85%;
+  font-size: 0.75rem;
+  line-height: 20px;
+  letter-spacing: 0.4px;
 }
