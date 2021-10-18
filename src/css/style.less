@@ -2,38 +2,14 @@
 
 @import "modules/vars";
 @import "modules/tags";
+@import "modules/independent_blocks";
 
-.h-light {
+.font-light {
     color: white;
 }
 
-.h-dark {
+.font-dark {
     color: @dark-font-color;
-}
-
-.nav__img {
-    width: 45px;
-    height: 43.2px;
-}
-
-.nav__ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 6px 0 6px 0;
-    flex-direction: row;
-    justify-content: space-between;
-
-    a {
-        padding: 10px 17.7px 0 17.7px;
-        border-radius: 2px;
-        letter-spacing: 0.3px;
-    }
-
-    li {
-        text-transform: uppercase;
-        font-size: @nav-font-size;
-    }
 }
 
 #home {
@@ -53,7 +29,6 @@
 }
 
 .home__form {
-    
     input {
         width: 253px;
         margin-right: 9px;
@@ -87,11 +62,7 @@
     padding: 177px @block-padding 137px @block-padding;
 }
 
-.service__container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.service__container {  
     margin-top: 16px;
 }
 
@@ -156,4 +127,106 @@
 
 .about-us__left-part {
     background-image: url(../img/bg-about-us.png);
+}
+
+#pricing-table {
+    // 148
+    padding: 117px @block-padding 176px @block-padding;
+    background-color: @lightblue-color;
+}
+
+.pricing-table__container {
+    margin-top: 71px;
+}
+
+.pricing-table__container_item {
+    flex-basis: 33%;
+    height: 395px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    border-radius: 2px;
+    transition: all 0.3s;
+
+    &:hover {
+        background-color: @blue-color;
+        flex-basis: 34%;
+        height: 450px;
+        margin-top: -26px;
+        transition: all 0.3s;
+
+        h3, h4, li, .price-block {
+            color: white;
+        }
+    }
+
+    h3 {
+        margin-top: 8px;
+        margin-bottom: 17px;
+        text-align: center;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        font-family: sans-serif;
+        font-weight: lighter;
+    }
+
+    h4 {
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        margin-top: -4px;
+        letter-spacing: 0.2px;
+    }
+
+    ul {
+        margin-top: 28px;
+        padding: 0 7% 0 7%;
+    }
+
+    li {
+        padding: 11px 0 11px 0;
+        text-transform: uppercase;
+        border-top: 1px solid @gray-font-color;
+        color: @gray-font-color;
+        text-align: center;
+        font-size: 0.75rem;
+    }
+
+    button {
+        margin: 18px 33% 0 33%;
+        padding: 12px 0 12px 0;
+        font-size: 0.75rem;
+    }
+}
+
+.price-block {
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: @orange-color;
+}
+
+.price-block__currency {
+    font-size: 1.9rem;
+}
+
+.price-block__digit {
+    font-size: 3.3rem;
+}
+
+#how-it-works {
+    padding: 133px @block-padding 0 @block-padding;
+}
+
+.how-it-works__container {
+    justify-content: space-around;
+}
+
+.how-it-works__container_item {
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
 }

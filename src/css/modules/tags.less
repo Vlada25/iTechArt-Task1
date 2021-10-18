@@ -30,6 +30,35 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     padding: 20px @block-padding 20px @block-padding;
+
+    img {
+        width: 45px;
+        height: 43.2px;
+    }
+
+    ul {
+        padding: 6px 0 6px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    a {
+        padding: 10px 17.7px 0 17.7px;
+        border-radius: 2px;
+        letter-spacing: 0.3px;
+    }
+
+    li {
+        text-transform: uppercase;
+        font-size: @nav-font-size;
+    }
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -49,6 +78,7 @@ h2 {
 h4 {
     font-weight: lighter;
     font-size: 92%;
+    letter-spacing: 0.3px;
 }
 
 h1,
@@ -56,6 +86,10 @@ h2,
 h4 {
     margin: 0;
     text-align: center;
+
+    & when(lightness(@bg-color) < 50) {
+        color: white;
+    }
 }
 
 button {
