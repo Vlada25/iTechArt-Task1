@@ -1,87 +1,7 @@
 // compress: false
 
 @import "modules/vars";
-
-body {
-    margin: 0;
-    padding: 0;
-    background-color: @bg-color;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-family: sans-serif;
-}
-
-a {
-    display: block;
-    text-decoration: none;
-    color: @dark-font-color;
-    transition: all 0.3s;
-
-    & when(lightness(@bg-color) < 50) {
-        color: white;
-    }
-
-    &:hover {
-        color: white;
-        background-color: @orange-color;
-        transition: all 0.3s;
-    }
-}
-
-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 20px @block-padding 20px @block-padding;
-}
-
-h1 {
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    font-size: 195%;
-    font-family: 'Muller ExtraBold DEMO';
-}
-
-h2 {
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    font-size: 167%;
-    font-family: 'Muller ExtraBold DEMO';
-}
-
-h4 {
-    font-weight: lighter;
-    font-size: 92%;
-}
-
-h1,
-h2,
-h4 {
-    margin: 0;
-    text-align: center;
-}
-
-button {
-    text-transform: uppercase;
-    background-color: @orange-color;
-    color: white;
-    border: none;
-    border-radius: 2px;
-    cursor: pointer;
-    transition: all 0.3s;
-
-    &:hover {
-        background-color: darken(@orange-color, 10%);
-        border-radius: 10px;
-        transition: all 0.3s;
-    }
-}
-
-input {
-    border: none;
-    border-radius: 2px;
-}
+@import "modules/tags";
 
 .h-light {
     color: white;
@@ -164,7 +84,7 @@ input {
 #services {
     width: 100%;
     box-sizing: border-box;
-    padding: 177px @block-padding 135px @block-padding;
+    padding: 177px @block-padding 137px @block-padding;
 }
 
 .service__container {
@@ -172,14 +92,14 @@ input {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 15px;
+    margin-top: 16px;
 }
 
 .service__container_item {
     flex-basis: 47.5%;
     display: flex;
     flex-direction: row;
-    margin-top: 65px;
+    margin-top: 64px;
 
     p {
         margin-top: -1px;
@@ -202,4 +122,38 @@ input {
     font-size: 0.75rem;
     line-height: 20px;
     letter-spacing: 0.4px;
+}
+
+#about-us {
+     display: flex;
+     flex-direction: row;
+     background-color: @orange-color;
+}
+
+.about-us__part {
+    flex-basis: 50%;
+    padding: 141px @block-padding 158px 71px;
+    box-sizing: border-box;
+
+    h2 {
+        text-align: left;
+    }
+
+    p {
+        margin-top: 13px;
+        font-size: 0.7rem;
+        line-height: 22px;
+        letter-spacing: 0.4px;
+    }
+
+    button {
+        margin-top: 15px;
+        padding: 13px 6.1% 13px 6.1%;
+        box-shadow: 0 0 1px @dark-font-color;
+        font-size: 0.75rem;
+    }
+}
+
+.about-us__left-part {
+    background-image: url(../img/bg-about-us.png);
 }

@@ -129,20 +129,20 @@ input {
 #services {
   width: 100%;
   box-sizing: border-box;
-  padding: 177px 15.2% 135px 15.2%;
+  padding: 177px 15.2% 137px 15.2%;
 }
 .service__container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 15px;
+  margin-top: 16px;
 }
 .service__container_item {
   flex-basis: 47.5%;
   display: flex;
   flex-direction: row;
-  margin-top: 65px;
+  margin-top: 64px;
 }
 .service__container_item p {
   margin-top: -1px;
@@ -161,4 +161,32 @@ input {
   font-size: 0.75rem;
   line-height: 20px;
   letter-spacing: 0.4px;
+}
+#about-us {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffc155;
+}
+.about-us__part {
+  flex-basis: 50%;
+  padding: 141px 15.2% 158px 71px;
+  box-sizing: border-box;
+}
+.about-us__part h2 {
+  text-align: left;
+}
+.about-us__part p {
+  margin-top: 13px;
+  font-size: 0.7rem;
+  line-height: 22px;
+  letter-spacing: 0.4px;
+}
+.about-us__part button {
+  margin-top: 15px;
+  padding: 13px 6.1% 13px 6.1%;
+  box-shadow: 0 0 1px #394b50;
+  font-size: 0.75rem;
+}
+.about-us__left-part {
+  background-image: url(../img/bg-about-us.png);
 }
