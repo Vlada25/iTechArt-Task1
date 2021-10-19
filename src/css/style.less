@@ -266,6 +266,86 @@
 }
 
 #clients {
-    padding: 121px @block-padding 0 @block-padding;
+    padding: 121px @block-padding 142px @block-padding;
     background-color: @orange-color;
+}
+
+.comment__container {
+    margin-top: 33px;
+}
+
+.comment__container_item {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 48.4%;
+    background-color: white;
+    border-radius: 2px;
+    margin-top: 18px;
+    padding-top: 38px;
+    padding-bottom: 42px;
+}
+
+.worker-photo {
+    flex-basis: 22%;
+    margin-left: 5%;
+
+    img {
+        width: 100%;
+    }
+}
+
+.comment-text {
+    flex-basis: 62%;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.7rem;
+
+    p {
+        margin-top: 5px;
+        margin-bottom: 0;;
+        line-height: 20px;
+        letter-spacing: 0.4px;
+    }
+}
+
+.quotes {
+    color: @dark-font-color;
+    font-size: 2.1rem;
+}
+
+.quotes-1 {
+    flex-basis: 3.3%;
+    margin-left: 2%;
+}
+
+.quotes-2 {
+    transform: scaleY(-1);
+    margin-left: 41%;
+    margin-top: -15px;
+}
+
+.quotes-3 {
+    transform: scaleY(-1);
+    margin-left: 56%;
+    margin-top: -15px;
+}
+
+.worker-name-post {
+    display: flex;
+    flex-direction: row;
+    text-transform: uppercase;
+    margin-top: -10px;
+
+    p {
+        margin: 0;
+        font-size: 0.75rem;
+    }
+}
+
+.worker-name {
+    color: @orange-color;
+}
+
+.worker-post {
+    color: @gray-font-color;
 }
