@@ -17,12 +17,6 @@ a {
     & when(lightness(@bg-color) < 50) {
         color: white;
     }
-
-    &:hover {
-        color: white;
-        background-color: @orange-color;
-        transition: all 0.3s;
-    }
 }
 
 nav {
@@ -47,6 +41,12 @@ nav {
         padding: 10px 17.7px 0 17.7px;
         border-radius: 2px;
         letter-spacing: 0.3px;
+
+        &:hover {
+            color: white;
+            background-color: @orange-color;
+            transition: all 0.3s;
+        }
     }
 
     li {
@@ -109,6 +109,19 @@ button {
 }
 
 input {
+    margin-right: 9px;
     border: none;
     border-radius: 2px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    background-position: 12px;
+    background-repeat: no-repeat;
+}
+
+footer {
+    padding: 14px 0 14px 0;
+    text-align: center;
+    font-size: 0.75rem;
+    color: white;
+    background-color: @blue-color;
 }

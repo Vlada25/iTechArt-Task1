@@ -1,0 +1,84 @@
+#pricing-table {
+    padding: 117px @block-padding 148px @block-padding;
+    background-color: @lightblue-color;
+}
+
+.pricing-table__container {
+    margin-top: 71px;
+}
+
+.pricing-table__container_item {
+    flex-basis: 33%;
+    height: 395px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    border-radius: 2px;
+    transition: all 0.3s;
+
+    &:hover {
+        background-color: @blue-color;
+        flex-basis: 34%;
+        height: 450px;
+        margin-top: -26px;
+        transition: all 0.3s;
+
+        h3, h4, li, .price-block {
+            color: white;
+        }
+    }
+
+    h3 {
+        margin-top: 8px;
+        margin-bottom: 17px;
+        text-align: center;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        font-family: sans-serif;
+        font-weight: lighter;
+    }
+
+    h4 {
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        margin-top: -4px;
+        letter-spacing: 0.2px;
+    }
+
+    ul {
+        margin-top: 28px;
+        padding: 0 7% 0 7%;
+    }
+
+    li {
+        padding: 11px 0 11px 0;
+        text-transform: uppercase;
+        border-top: 1px solid @gray-color;
+        color: @gray-color;
+        text-align: center;
+        font-size: 0.75rem;
+    }
+
+    button {
+        margin: 18px 33% 0 33%;
+        padding: 12px 0 12px 0;
+        font-size: 0.75rem;
+    }
+}
+
+.price-block {
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: @orange-color;
+}
+
+.price-block__currency {
+    font-size: 1.9rem;
+}
+
+.price-block__digit {
+    font-size: 3.3rem;
+}
