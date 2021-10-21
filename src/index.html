@@ -14,38 +14,55 @@
 <body>
     <nav>
         <img src="img/logo.png" alt="logo">
-        <ul>
-            <a href="#">
+        <ul class="nav__large-ul">
+            <a href="#home">
                 <li>home</li>
             </a>
-            <a href="#">
+            <a href="#services">
                 <li>service</li>
             </a>
-            <a href="#">
+            <a href="#about-us">
                 <li>about us</li>
             </a>
-            <a href="#">
+            <a href="#pricing-table">
                 <li>pricing table</li>
             </a>
-            <a href="#">
+            <a href="#how-it-works">
                 <li>how it work</li>
             </a>
-            <a href="#">
+            <a href="#clients">
                 <li>happy clients</li>
             </a>
-            <a href="#">
+            <a href="#newsletter">
                 <li>contact us</li>
             </a>
         </ul>
 
-        <div class="topnav" id="myTopnav">
-            <a href="#" class="active">Home</a>
-            <a href="#">News</a>
-            <a href="#">Contact</a>
-            <a href="#">About</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
+        <div class="drop-down-menu">
+            <a class="menu-icon"><i class="fa fa-bars"></i></a>
+            <ul class="drop-down-menu__ul drop-down-menu__active">
+                <a href="#home">
+                    <li>home</li>
+                </a>
+                <a href="#services">
+                    <li>service</li>
+                </a>
+                <a href="#about-us">
+                    <li>about us</li>
+                </a>
+                <a href="#pricing-table">
+                    <li>pricing table</li>
+                </a>
+                <a href="#how-it-works">
+                    <li>how it work</li>
+                </a>
+                <a href="#clients">
+                    <li>happy clients</li>
+                </a>
+                <a href="#newsletter">
+                    <li>contact us</li>
+                </a>
+            </ul>
         </div>
     </nav>
 
@@ -64,6 +81,7 @@
     <div id="services">
         <h2 class="font-dark">our services</h2>
         <h4 class="font-dark">Lorem Ipsum is simply dummy Business industry.</h4>
+
         <div class="container service__container">
             <div class="service__container_item">
                 <div class="service__img">
@@ -140,7 +158,7 @@
 
     <div id="about-us">
         <div class="about-us__part about-us__left-part"></div>
-        <div class="about-us__part">
+        <div class="about-us__part about-us__right-part">
             <h2 class="font-light">about us</h2>
             <p class="font-light">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
@@ -386,6 +404,8 @@
     </div>
 
     <footer>All contents © copyright 2014 Business Theme. All rights reserved Designed by : akhilwebfolio</footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

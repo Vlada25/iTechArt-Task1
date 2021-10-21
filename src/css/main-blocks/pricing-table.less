@@ -1,5 +1,5 @@
 #pricing-table {
-    padding: 117px @block-padding 148px @block-padding;
+    padding: 117px var(--block-padding) 148px var(--block-padding);
     background-color: @lightblue-color;
 }
 
@@ -8,7 +8,6 @@
 }
 
 .pricing-table__container_item {
-    flex-basis: 33%;
     height: 395px;
     display: flex;
     flex-direction: column;
@@ -19,9 +18,7 @@
 
     &:hover {
         background-color: @blue-color;
-        flex-basis: 34%;
         height: 450px;
-        margin-top: -26px;
         transition: all 0.3s;
 
         h3, h4, li, .price-block {
@@ -81,4 +78,34 @@
 
 .price-block__digit {
     font-size: 3.3rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .pricing-table__container {
+        justify-content: space-between;
+    }
+
+    .pricing-table__container_item {
+        flex-basis: 33%;
+
+        &:hover {
+            flex-basis: 34%;
+            margin-top: -26px;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .pricing-table__container {
+        justify-content: center;
+    }
+
+    .pricing-table__container_item {
+        flex-basis: 70%;
+        margin-bottom: 20px;
+
+        &:hover {
+            flex-basis: 75%;
+        }
+    }
 }

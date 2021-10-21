@@ -1,5 +1,5 @@
 #clients {
-    padding: 121px @block-padding 142px @block-padding;
+    padding: 121px var(--block-padding) 142px var(--block-padding);
     background-color: @orange-color;
 }
 
@@ -10,7 +10,6 @@
 .comment__container_item {
     display: flex;
     flex-direction: row;
-    flex-basis: 48.4%;
     background-color: white;
     border-radius: 2px;
     margin-top: 18px;
@@ -82,4 +81,24 @@
 
 .worker-post {
     color: @gray-color;
+}
+
+@media screen and (min-width: 1024px) {
+    .comment__container {
+        justify-content: space-between;
+    }
+
+    .comment__container_item {
+        flex-basis: 48.4%;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .comment__container {
+        justify-content: center;
+    }
+
+    .comment__container_item {
+        flex-basis: 70%;
+    }
 }

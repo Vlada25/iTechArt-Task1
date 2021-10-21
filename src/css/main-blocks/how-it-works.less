@@ -1,14 +1,8 @@
 #how-it-works {
-    padding: 133px @block-padding 0 @block-padding;
-}
-
-.how-it-works__container {
-    justify-content: space-around;
-    margin-top: 100px;
+    padding: 133px var(--block-padding) 0 var(--block-padding);
 }
 
 .how-it-works__container_item {
-    flex-basis: 20%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -18,7 +12,6 @@
         text-align: center;
         font-weight: lighter;
         text-transform: uppercase;
-        margin-top: 81px;
         margin-bottom: 3px;
     }
 
@@ -37,5 +30,36 @@
 
     button {
         padding: 12px 20px 12px 20px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .how-it-works__container {
+        justify-content: space-around;
+        margin-top: 97px;
+    }
+    
+    .how-it-works__container_item {
+        flex-basis: 20%;
+
+        h3 {
+            margin-top: 81px;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .how-it-works__container {
+        justify-content: space-around;
+        margin-top: 50px;
+    }
+
+    .how-it-works__container_item {
+        flex-basis: 40%;
+        margin-top: 60px;
+
+        h3 {
+            margin-top: 50px;
+        }
     }
 }

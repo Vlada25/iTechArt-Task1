@@ -1,7 +1,7 @@
 #services {
     width: 100%;
     box-sizing: border-box;
-    padding: 177px @block-padding 137px @block-padding;
+    padding: 177px var(--block-padding) 137px var(--block-padding);
 }
 
 .service__container {  
@@ -9,7 +9,6 @@
 }
 
 .service__container_item {
-    flex-basis: 47.5%;
     display: flex;
     flex-direction: row;
     margin-top: 64px;
@@ -35,4 +34,16 @@
     font-size: 0.75rem;
     line-height: 20px;
     letter-spacing: 0.4px;
+}
+
+@media screen and (min-width: 1024px) {
+    .service__container_item {
+        flex-basis: 47.5%;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .service__container_item {
+        flex-basis: 70%;
+    }
 }
