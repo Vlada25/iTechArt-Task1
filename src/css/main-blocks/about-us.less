@@ -5,7 +5,17 @@
 }
 
 .about-us__part {
-   padding: 141px var(--block-padding) 158px 71px;
+   --pad-left: 71px;
+   --pad-top: 141px;
+   --pad-bottom: 158px;
+
+   @media screen and (max-width: 768px) {
+       --pad-left: 40px;
+       --pad-top: 100px;
+       --pad-bottom: 100px;
+   }
+
+   padding: var(--pad-top) var(--block-padding) var(--pad-bottom) var(--pad-left);
    box-sizing: border-box;
 
    h2 {
@@ -29,6 +39,7 @@
 
 .about-us__left-part {
    background-image: url(../img/bg-about-us.png);
+   background-position: center;
 }
 
 @media screen and (min-width: 1024px) {

@@ -52,22 +52,15 @@
 }
 
 .quotes-2 {
-    transform: scaleY(-1);
-    margin-left: 41%;
-    margin-top: -15px;
-}
-
-.quotes-3 {
-    transform: scaleY(-1);
-    margin-left: 56%;
-    margin-top: -15px;
+    transform: scaleX(-1);
+    margin-left: 0;
 }
 
 .worker-name-post {
     display: flex;
     flex-direction: row;
     text-transform: uppercase;
-    margin-top: -10px;
+    margin-top: -30px;
 
     p {
         margin: 0;
@@ -93,12 +86,18 @@
     }
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) and (min-width: 786px) {
     .comment__container {
         justify-content: center;
     }
 
     .comment__container_item {
-        flex-basis: 70%;
+        flex-basis: 80%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .comment__container_item {
+        flex-basis: 100%;
     }
 }
