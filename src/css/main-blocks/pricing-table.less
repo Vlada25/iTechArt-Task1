@@ -1,5 +1,10 @@
 #pricing-table {
-    padding: 117px var(--block-padding) 148px var(--block-padding);
+    --margin-borrom: 176px;
+
+    @media screen and (max-width: 768px){
+        --margin-borrom: 120px;
+    }
+    padding: 117px var(--block-padding) var(--margin-borrom) var(--block-padding);
     background-color: @lightblue-color;
 }
 
