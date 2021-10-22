@@ -1,0 +1,63 @@
+#about-us {
+    display: flex;
+    flex-direction: row;
+    background-color: @orange-color;
+}
+
+.about-us__part {
+   --pad-left: 71px;
+   --pad-top: 141px;
+   --pad-bottom: 158px;
+
+   @media screen and (max-width: 768px) {
+       --pad-left: 40px;
+       --pad-top: 100px;
+       --pad-bottom: 100px;
+   }
+
+   padding: var(--pad-top) var(--block-padding) var(--pad-bottom) var(--pad-left);
+   box-sizing: border-box;
+
+   h2 {
+       text-align: left;
+   }
+
+   p {
+       margin-top: 13px;
+       font-size: 0.7rem;
+       line-height: 22px;
+       letter-spacing: 0.4px;
+   }
+
+   button {
+       margin-top: 15px;
+       padding: 13px 6.1% 13px 6.1%;
+       box-shadow: 0 0 1px @dark-font-color;
+       font-size: 0.75rem;
+   }
+}
+
+.about-us__left-part {
+   background-image: url(../img/bg-about-us.png);
+   background-position: center;
+}
+
+@media screen and (min-width: 1024px) {
+    .about-us__left-part {
+        flex-basis: 50%;
+     }
+
+     .about-us__right-part {
+        flex-basis: 50%;
+     }
+}
+
+@media screen and (max-width: 1024px){
+    .about-us__left-part {
+        flex-basis: 30%;
+     }
+
+     .about-us__right-part {
+        flex-basis: 70%;
+     }
+}

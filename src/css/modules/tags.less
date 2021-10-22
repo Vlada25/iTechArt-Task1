@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: @bg-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: @dark-font-color;
+    transition: all 0.3s;
+
+    & when(lightness(@bg-color) < 50) {
+        color: white;
+    }
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px var(--block-padding) 20px var(--block-padding);
+
+    img {
+        width: 45px;
+        height: 43.2px;
+    }
+
+    .nav__large-ul {
+        padding: 6px 0 6px 0;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    a {
+        padding: 10px 17.7px 0 17.7px;
+        border-radius: 2px;
+        letter-spacing: 0.3px;
+
+        &:hover {
+            color: white;
+            background-color: @orange-color;
+            transition: all 0.3s;
+        }
+    }
+
+    li {
+        text-transform: uppercase;
+        font-size: @nav-font-size;
+    }
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-size: 195%;
+    font-family: 'Muller ExtraBold DEMO';
+}
+
+h2 {
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-size: 167%;
+    font-family: 'Muller ExtraBold DEMO';
+}
+
+h4 {
+    font-weight: lighter;
+    font-size: 92%;
+    letter-spacing: 0.3px;
+}
+
+h1,
+h2,
+h4 {
+    margin: 0;
+    text-align: center;
+
+    & when(lightness(@bg-color) < 50) {
+        color: white;
+    }
+}
+
+button {
+    text-transform: uppercase;
+    background-color: @orange-color;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+        background-color: darken(@orange-color, 10%);
+        border-radius: 10px;
+        transition: all 0.3s;
+    }
+}
+
+input {
+    margin-right: 9px;
+    border: none;
+    border-radius: 2px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    background-position: 12px;
+    background-repeat: no-repeat;
+}
+
+footer {
+    padding: 14px 0 14px 0;
+    text-align: center;
+    font-size: 0.75rem;
+    color: white;
+    background-color: @blue-color;
+}
