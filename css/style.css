@@ -150,7 +150,7 @@ footer {
   border: 2px solid #709dca;
 }
 @media screen and (max-width: 1024px) {
-  .laptop-slider {
+  #laptop-slider {
     top: 530px;
   }
 }
@@ -226,7 +226,7 @@ footer {
     flex-basis: 100%;
   }
 }
-.about-us {
+#about-us {
   display: flex;
   flex-direction: row;
   background-color: #ffc155;
@@ -414,7 +414,7 @@ footer {
 .how-it-works__button-container button {
   padding: 12px 20px 12px 20px;
 }
-#arrows-block {
+.arrows-block {
   position: relative;
   width: 76%;
   margin-left: 12%;
@@ -451,7 +451,7 @@ footer {
   .how-it-works__container_item h3 {
     margin-top: 50px;
   }
-  #arrows-block {
+  .arrows-block {
     display: none;
   }
 }
@@ -466,7 +466,7 @@ footer {
   .how-it-works__container_item h3 {
     margin-top: 50px;
   }
-  #arrows-block {
+  .arrows-block {
     display: none;
   }
 }
