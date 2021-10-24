@@ -100,7 +100,7 @@ footer {
   color: white;
   background-color: #709dca;
 }
-#laptop-slider {
+.laptop-slider {
   position: absolute;
   width: 100%;
   top: 361px;
@@ -414,7 +414,7 @@ footer {
 .how-it-works__button-container button {
   padding: 12px 20px 12px 20px;
 }
-#arrows-block {
+.arrows-block {
   position: relative;
   width: 76%;
   margin-left: 12%;
