@@ -451,7 +451,7 @@ footer {
   .how-it-works__container_item h3 {
     margin-top: 50px;
   }
-  #arrows-block {
+  .arrows-block {
     display: none;
   }
 }
@@ -466,7 +466,7 @@ footer {
   .how-it-works__container_item h3 {
     margin-top: 50px;
   }
-  #arrows-block {
+  .arrows-block {
     display: none;
   }
 }
